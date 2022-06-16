@@ -40,7 +40,7 @@ class Main {
       nepatbl[index] = 4;
       index++;
     }
-    System.out.println("\n5. Ka uzzināt index simbola String?\n 1.Meklēt paši\n 2.lastIndeOf()\n 3. 2. un 4. pareizi\n 4.indexOf()\n\n");
+    System.out.println("\n5. Ka uzzināt index simbola String?\n 1.Meklēt paši\n 2.lastIndexOf()\n 3. 2. un 4. pareizi\n 4.indexOf()\n\n");
          atbl = scan.nextInt();
       if(atbl == 3)
       punkts++;
