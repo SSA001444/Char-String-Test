@@ -7,7 +7,7 @@ class Main {
     int[] nepatbl = new int[10];
     Scanner scan = new Scanner(System.in);
     System.out.println("Sveiki! Šis ir tests, lai pārbaudītu zināšanas par simboliem un simboliem virknēm. Test sastāv no 10 jautājumiem.\n\n");
-
+try{
     System.out.println("\n1. Ko jūs attēlojat zem mainīgā, kas saglabā simboli un simbolas virkni?\n 1.String | int\n 2. String | char\n 3.char | String\n 4.char | double\n\n");
     atbl = scan.nextInt();
     if(atbl == 3)
@@ -88,12 +88,14 @@ class Main {
       nepatbl[index] = 10;
     index++;
     }
-    System.out.println("Pareizas atbildes: " + punkts + "\n");
+        System.out.println("Pareizas atbildes: " + punkts + "\n");
     System.out.println("Nepareizi atbildēti jautājumi:");
         for(int ind : nepatbl)
           if(ind!=0)
       System.out.println(ind+".");
     scan.close();
-    
+  }catch(Exception e){
+      System.out.println("Jūs ievadi ne cipari");
+    }
   }
 }
